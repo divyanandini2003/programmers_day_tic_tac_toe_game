@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap")
+
+nav ul{
+	list-style-type:none;
+}
+nav{
+	background-color: /*rgb(37,9,37)*/ #ff4d94;
+	color: white;
+	height: 75px;
+	font-size: 26px;
+	display: flex;
+	align-items: center;
+	padding:0 12px;
+	font-family: 'Roboto', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+}
+
+/*table{
+	border-collapse: collapse;
+	margin:200px auto;
+
+}
+td{
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	vertical-align: middle;
+	border:1px solid black;
+}*/
+
+.gamecontainer{
+  /*background-color: lightpink;*/
+  display: flex;
+  justify-content: center;
+  margin: 40px 0px 0px -140px;
+}
+.container{
+	margin-top: 0px;
+	margin-left:220px;
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family:  'Roboto', sans-serif;
+    position: relative;
+    
+    
+}
+.gameInfo h1 {
+		font-size:1.8rem;
+		margin-left: 950px;
+		margin-top: 20px;
+        text-shadow: 2px 2px 8px #FF0000;
+			}
+.box{
+	border:2px solid black;
+	font-size: 8vw;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.box:hover{
+	background-color:#ffe6ff;
+}
+.gameInfo{
+	padding:0 34px;
+	font-family: 'Baloo Bhaina 2',cursive;
+}
+.imgbox{
+	width:0;
+	transition:width 1s ease-in-out; 
+	/*display: none;*/
+}
+.br-0{
+	border-right:0;
+}
+.bl-0{
+	border-left:0;
+
+}
+.bt-0{
+	border-top:0;
+
+}
+.bb-0{
+	border-bottom:0;
+
+}
+.bbr{
+	border-right: dashed;
+}
+.bbl{
+	border-left: dashed;
+}
+#reset{
+	margin:0 23px;
+	padding: 1px 18px;
+	background-color:#b3ffb3;
+	border-radius: 6px;
+	cursor: pointer;
+	font-family: 'Baloo Bhaina 2';
+	font-size:15px;
+	font-weight: bolder;
+	border-color:#b3ffb3;
+}
+.line{
+	background-color: black;
+	width: 0px;
+	height: 3px;
+	position:absolute;
+	background-color: #ff80ff;
+	transition: width 1s ease-in-out;
+
+	}
+
+
+@media media-type and (media-feature)
+{
+	.gameContainer{
+		flex-wrap:wrap;
+	}
+	.gameInfo{
+		margin-top: 34px;
+	}
+	.gameInfo h1{
+		font-size:1.5rem;
+	}
+	.container{
+		grid-template-rows: repeat(3,20vw);
+    grid-template-columns: repeat(3,20vw)5
+	}
+}
+.soft{
+	font-size: 25px;
+	margin-left: 420px;
+	text-shadow: 0 0 3px green;
+	
+}
+.winner{
+	margin-left: 320px;
+	font-size: 30px;
+	/*text-shadow: 0 0 3px #FF0000;*/
+
+}
+#reset{
+	margin-left: 350px;
+	margin-top: 80px;
+	height: 35px;
+	width: 90px;
+}
+.heads{
+	margin-left: 600px;
+}
